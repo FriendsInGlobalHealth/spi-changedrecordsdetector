@@ -1,6 +1,6 @@
 package fgh.spi.changedrecordsdetector;
 
-import fgh.sp.eip.changedrecordsdetector.EipChangedRecordDetectedAction;
+//import fgh.sp.eip.changedrecordsdetector.EipChangedRecordDetectedAction;
 
 /**
  * @author jpboane
@@ -28,16 +28,16 @@ public class DetectedRecordService extends GenericOperationsService<DetectedReco
     }
     
     
-  static DetectedRecordAction[] staticServices = {new EipChangedRecordDetectedAction()}; 
+  //static DetectedRecordAction[] staticServices = {new EipChangedRecordDetectedAction()}; 
     
     @SuppressWarnings("unused")
 	private DetectedRecordAction detectAction(String appCode) {
     	
-    	for (DetectedRecordAction action : staticServices) {
+    	/*for (DetectedRecordAction action : staticServices) {
 			if (action.getAppCode().equals(appCode)) {
 				return action;
 			}
-    	}
+    	}*/
 		
     	/*for (DetectedRecordAction action : this.operations) {
     		if (action.getAppCode().equals(appCode)) {
